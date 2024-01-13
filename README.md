@@ -28,29 +28,36 @@ This API provides RBAC authentication with user management capabilities. It incl
 ## Installation
 
 1. **Clone the repository:**
+  ```bash
+     git clone https://github.com/yashtiwari22/rbac_api_stack.git
+  ```
 
-- git clone https://github.com/yashtiwari22/rbac_api_stack.git
 
 2. **Navigate to the project directory:**
-
-- cd rbac_api_stack
+  ```bash
+     cd rbac_api_stack
+  ```
 
 3. **Install dependencies:**
-
-- npm install
+  ```bash
+     npm install
+  ```
 
 4. **Set up MongoDB**
 
 - Make sure you have MongoDB installed and running on your local machine.
 - Create a .env file in the root of your project and add the following details:
-  - PORT
-  - MONGODB_URI
-  - ACCESS_TOKEN_SECRET
-  - ACCESS_TOKEN_EXPIRY
+```bash
+  PORT
+  MONGODB_URI
+  ACCESS_TOKEN_SECRET
+  ACCESS_TOKEN_EXPIRY
+```
 
 5. **Start the server**
-
-npm run dev
+  ```bash
+     npm run dev
+  ```
 
 ## Usage
 
