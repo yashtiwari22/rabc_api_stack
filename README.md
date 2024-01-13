@@ -52,11 +52,11 @@ https://github.com/yashtiwari22/rbac_api_stack/assets/85613117/0096280d-760f-4d1
 - Make sure you have MongoDB installed and running on your local machine.
 - Create a .env file in the root of your project and add the following details:
 ```bash
-  PORT
-  CORS_ORIGIN
-  MONGODB_URI
-  ACCESS_TOKEN_SECRET
-  ACCESS_TOKEN_EXPIRY
+  PORT=3000
+  CORS_ORIGIN=*
+  MONGODB_URI={YOUR_MONGODB_URI}
+  ACCESS_TOKEN_SECRET=ANY_SECRET_KEY
+  ACCESS_TOKEN_EXPIRY=1d
 ```
 
 5. **Start the server**
@@ -81,7 +81,8 @@ https://github.com/yashtiwari22/rbac_api_stack/assets/85613117/0096280d-760f-4d1
 - GET /api/v1/statistics: Access statistics (admin access required).
 
 ## Environment Variables
-- PORT: The port on which the server will run.
+- PORT: The port on which the server will run
+- CORS_ORGIN: *
 - MONGODB_URI: The MongoDB connection URI.
 - ACCESS_TOKEN_SECRET: Secret key for JWT token generation.
 - ACCESS_TOKEN_EXPIRY: Access token expiry 
