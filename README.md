@@ -28,15 +28,15 @@ This API provides RBAC authentication with user management capabilities. It incl
 
 1. **Clone the repository:**
 
-git clone https://github.com/your-username/rbac-auth-api.git
+- git clone https://github.com/your-username/rbac-auth-api.git
 
 2. **Navigate to the project directory:**
 
-cd rbac_api_stack
+- cd rbac_api_stack
 
 3. **Install dependencies:**
 
-npm install
+- npm install
 
 4. **Set up MongoDB**
 
