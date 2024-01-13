@@ -9,6 +9,7 @@ This project is a Role-Based Access Control (RBAC) authentication API built usin
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
+- [Environment Variable](#environment-variable)
 - [Postman Collection](#postman-collection)
 - [Packages and Modules Used](#packages-and-modules-used)
 
@@ -28,7 +29,7 @@ This API provides RBAC authentication with user management capabilities. It incl
 
 1. **Clone the repository:**
 
-- git clone https://github.com/your-username/rbac-auth-api.git
+- git clone https://github.com/yashtiwari22/rbac_api_stack.git
 
 2. **Navigate to the project directory:**
 
@@ -83,4 +84,5 @@ npm run dev
 - Mongoose: MongoDB object modeling tool.
 - Jsonwebtoken: JSON Web Token implementation for Node.js.
 - Bcrypt: Password hashing library.
-- cookie-parser: sending cookies
+- cookie-parser: Sending cookies
+- nodemon: Simple monitor script for use during development of a Node.js app
