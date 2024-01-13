@@ -1,6 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 import jwt from "jsonwebtoken";
 import { access_level } from "../constants.js";
+import bcrypt from "bcrypt";
 
 const userSchema = new Schema(
   {
@@ -19,6 +20,10 @@ const userSchema = new Schema(
       lowecase: true,
       trim: true,
     },
+    password: {
+      type: String,
+      required: [true, "Password is required"],
+    },
     access_level: {
       type: String,
       required: true,
@@ -30,6 +35,17 @@ const userSchema = new Schema(
     timestamps: true,
   }
 );
+
+userSchema.pre("save", async function (next) {
+  if (!this.isModified("password")) return next();
+
+  this.password = await bcrypt.hash(this.password, 10);
+  next();
+});
+
+userSchema.methods.isPasswordCorrect = async function (password) {
+  return await bcrypt.compare(password, this.password);
+};
 
 userSchema.methods.generateAccessToken = function () {
   return jwt.sign(
