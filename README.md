@@ -53,6 +53,7 @@ https://github.com/yashtiwari22/rbac_api_stack/assets/85613117/0096280d-760f-4d1
 - Create a .env file in the root of your project and add the following details:
 ```bash
   PORT
+  CORS_ORIGIN
   MONGODB_URI
   ACCESS_TOKEN_SECRET
   ACCESS_TOKEN_EXPIRY
