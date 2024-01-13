@@ -17,6 +17,10 @@ This project is a Role-Based Access Control (RBAC) authentication API built usin
 
 This API provides RBAC authentication with user management capabilities. It includes endpoints for user registration, login, and CRUD operations for managing users. Access to certain routes is restricted based on the user's role.
 
+
+https://github.com/yashtiwari22/rbac_api_stack/assets/85613117/0096280d-760f-4d17-8c8a-092f41341307
+
+
 ## Features
 
 - User registration with hashed password storage
