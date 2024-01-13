@@ -41,7 +41,11 @@ This API provides RBAC authentication with user management capabilities. It incl
 4. **Set up MongoDB**
 
 - Make sure you have MongoDB installed and running on your local machine.
-- Update the MongoDB connection string in index.js if necessary.
+- Create a .env file in the root of your project and add the following details:
+  - PORT
+  - MONGODB_URI
+  - ACCESS_TOKEN_SECRET
+  - ACCESS_TOKEN_EXPIRY
 
 5. **Start the server**
 
@@ -62,6 +66,12 @@ npm run dev
 - GET /api/v1/dashboard: Access the dashboard (admin access required).
 - GET /api/v1/settings: Access user settings (user access required).
 - GET /api/v1/statistics: Access statistics (admin access required).
+
+## Environment Variables
+- PORT: The port on which the server will run.
+- MONGODB_URI: The MongoDB connection URI.
+- ACCESS_TOKEN_SECRET: Secret key for JWT token generation.
+- ACCESS_TOKEN_EXPIRY: Access token expiry 
 
 ## Postman Collection
 
